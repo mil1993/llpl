@@ -171,8 +171,8 @@ def predicted_pv():
     # KUSTO_CLIENT = KustoClient(KCSB)
 
     # In case you want to authenticate with AAD username and password
-    username = "ashish.mishra2@unilever.com"
-    password = "SitaRamRadha@1"
+    username = "xyz.xyz.com"
+    password = "xyz"
     authority_id = AAD_TENANT_ID
     KCSB = KustoConnectionStringBuilder.with_aad_user_password_authentication(KUSTO_CLUSTER, username, password, authority_id)
     KUSTO_CLIENT = KustoClient(KCSB)
@@ -1591,3 +1591,4 @@ if __name__ == "__main__":
     logger.info("Scheduler started automatically on app initialization.")
     logger.info("Application started.")
     app.run(debug=True)
+
